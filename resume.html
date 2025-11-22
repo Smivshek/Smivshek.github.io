@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Stephen Mivshek</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="resume-container">
+
+             <!-- Document Selector + Downloads -->
+        <section class="document-selector">
+            <h2>Resume & Curriculum Vitae</h2>
+            <div class="doc-buttons">
+                <button onclick="showDoc('resume')" class="btn active" id="btn-resume">View Resume</button>
+                <a href="resume.pdf" download class="btn download">Download Resume (PDF)</a>
+                <a href="cv.pdf" download class="btn download">Download CV (PDF)</a>
+            </div>
+        </section>
+
+                <!-- Main Content -->
+    <main class="resume-container">
+            <div class="resume-display">
+                <header class="resume-header">
+                    <h1>Stephen Mivshek</h1>
+                    <p>Mesa, Arizona | 480-881-5631 | Stephen.Mivshek@gmail.com | github.com/Smivshek</p>
+                </header>
+
+                <section>
+                    <h2>Education</h2>
+                    <div class="entry">
+                        <h3>ARIZONA STATE UNIVERSITY: 08/2023 – Present</h3>
+                        <p>Expected graduation date: 5/2027<br>
+                        Major: Biomedical Engineering Bachelor of Science<br>
+                        Minors: Business Management and Engineering Management<br>
+                        Relevant Courses: Methods of Molecular and Cell Biology, Cell Biology, Chemistry 2, Human Anatomy, Biology.<br>
+                        Awards: Scholarship: Earn to Learn, Deans list for spring 2025, Member of BMES</p>
+                    </div>
+                    <div class="entry">
+                        <h3>MESA COMMUNITY COLLEGE: 08/2016 – 07/2023</h3>
+                        <p>Major: Associate Degree in Science, Emphasis on Engineering</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Relevant Projects</h2>
+                    <ul class="bullet-list">
+                        <li>Overhauled lab project to transfer plasmid DNA between bacterial cultures, documenting findings in a report.</li>
+                        <li>Collaborated on a lab project to design and optimize solar panel construction. Discovered and utilized cheaper alternatives to available parts.</li>
+                        <li>Led another solar panel project to design the most effective and affordable home energy system.</li>
+                        <li>Executed project to document genetic traits and their transference in cross-pollinated live mustard plants.</li>
+                        <li>Programmed a dice game with complicated rules in Java.</li>
+                        <li>Coded a Python project to analyze and discover signs of golf putting green.</li>
+                        <li>Refined a MATLAB project to ascertain the power usage of a home.</li>
+                        <li>Created a game with RPG Maker MZ, framing the game system, world, story, and code simple plugins as well.</li>
+                        <li>Led a team for a FURI proposal, where the team was able to frame a scenario to replace harmful bacteria, with healthy bacteria that produces probiotics that could help cattle.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Work Experience</h2>
+                    <div class="entry">
+                        <h3>ELECTRICAL PROCESSOR (PART TIME) <span class="date">06/2015 – 04/2020</span></h3>
+                        <p>Goodwill of Central and Northern Arizona Apache Junction, AZ</p>
+                        <ul class="bullet-list">
+                            <li>Tested electrical items to make sure they worked and valued them based on price and condition.</li>
+                            <li>Consistently met the full-time quota of 225, instead of part time quota of (135) every day.</li>
+                            <li>Regularly helped and unblocked coworkers to meet critical deadlines.</li>
+                            <li>Voted employee of the year, 3 years in a row.</li>
+                            <li>Led safety team for 4 years; identified safety issues and proposed improvements that were adopted by management, including safety certifications.</li>
+                            <li>Collaborated with coworkers to fix issues like unsafe mountain of donated goods, unsafe blockages and hazardous items, utilizing quick decision-making skills.</li>
+                        </ul>
+                    </div>
+
+                    <div class="entry">
+                        <h3>BANNER BAYWOOD HOSPITAL VOLUNTEER (PART TIME) <span class="date">08/2004 – 05/2006</span></h3>
+                        <p>Banner Baywood Medical Center Mesa, AZ</p>
+                        <ul class="bullet-list">
+                            <li>Answered 50–60 phone calls per day, and directed relatives and patients to their rooms.</li>
+                            <li>Transported patients to different areas of the hospital.</li>
+                            <li>Efficiently identified patients in the medical computer system.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Skills & Abilities</h2>
+                    <div class="skills-grid">
+                        <div><strong>Pipetting, Titrations, Centrifuging</strong> – 1 year</div>
+                        <div><strong>Coding with Arduino, Matlab</strong> – 2 years</div>
+                        <div><strong>Coding with Java, C++, Python</strong> – 1 year</div>
+                        <div><strong>Modeling with LTSpice, Onshape 3D</strong> – 1 year</div>
+                        <div><strong>Safety Team Ambassador</strong> – 4 years</div>
+                        <div><strong>Designing with RPG Maker MZ and coding with plugins</strong></div>
+                    </div>
+                </section>
+            </div>
+
+            
+        </div>
+        </section>
+            </div>
+        </div>
+
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company / Organization</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Reason for Contact *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn submit">Send Message</button>
+                <p class="form-status" id="form-status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Email: smivshek@asu.com</p>
+        <p>Phone: 480-881-5631</p>
+        <p>&copy; 2025 Stephen Mivshek. All rights reserved.</p>
+    </footer>
+
+    <!-- Inline Script for Toggle + Form -->
+    <script>
+        // Toggle Resume / CV
+        function toggleDoc(type) {
+            const resume = document.getElementById('resume-content');
+            const cv = document.getElementById('cv-content');
+            const btnResume = document.getElementById('btn-resume');
+            const btnCv = document.getElementById('btn-cv');
+
+            if (type === 'resume') {
+                resume.classList.add('active');
+                cv.classList.remove('active');
+                btnResume.classList.add('active');
+                btnCv.classList.remove('active');
+            } else {
+                cv.classList.add('active');
+                resume.classList.remove('active');
+                btnCv.classList.add('active');
+                btnResume.classList.remove('active');
+            }
+        }
+
+        // Form Submission with Formspree
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            status.textContent = 'Sending...';
+            status.style.color = '#1abc9c';
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    status.textContent = 'Thank you! I\'ll get back to you soon.';
+                    status.style.color = '#27ae60';
+                    form.reset();
+                } else {
+                    throw new Error('Failed to send');
+                }
+            } catch (err) {
+                status.textContent = 'Oops! Something went wrong. Try again.';
+                status.style.color = '#e74c3c';
+            }
+        });
+    </script>
+
+</body>
+</html>
