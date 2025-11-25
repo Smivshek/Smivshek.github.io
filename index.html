@@ -3,26 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Skills - Portfolio</title>
+    <title>Home - Stephen Mivshek</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Stephen Mivshek - Biomedical Engineering student at ASU | Portfolio showcasing skills, projects, resume, and contact">
+    <meta name="author" content="Stephen Mivshek">
+    <meta name="keywords" content="Stephen Mivshek, Biomedical Engineering, ASU, portfolio, resume, projects, Arizona">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Stephen Mivshek - Biomedical Engineering Portfolio">
+    <meta property="og:description" content="ASU Biomedical Engineering student passionate about improving human health through technology and innovation.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="imagesprofile.jpg">
 </head>
+
+
+
 <body>
+
+    <!-- Header -->
     <header class="header">
         <h1>Stephen Mivshek</h1>
     </header>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><a href="resume.html">Resume & CV</a></li>
         </ul>
     </nav>
 
-<body>
-    <h1>Welcome to My Project</h1>
-    <p>This is the home page.</p>
-    <p><a href="other-page.html">Go to My Main Page</a></p>
+    <!-- Main Content -->
+    <main class="home-container">
+
+        <!-- Full-width Video -->
+        <section class="video-section">
+            <video controls autoplay muted loop playsinline class="hero-video">
+                <source src="videointro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+
+
+        <!-- About Me + Profile Card -->
+        <section class="about-section">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a highly motivated Biomedical Engineering student at Arizona State University with a deep personal passion for improving human health and mobility. 
+                    Having witnessed loved ones struggle with cancer and physical limitations, I am driven to develop innovative solutions — from regenerative medicine and prosthetics to cybernetic augmentation — that enhance quality of life and extend healthy lifespans.
+                </p>
+                <p>
+                    My background combines hands-on lab experience (molecular biology, 3D modeling, circuit design), programming (Python, Java, C++, MATLAB, Arduino), and real-world leadership (4-time Employee of the Year, Safety Team Leader). 
+                    I thrive in collaborative environments and love turning complex ideas into working prototypes.
+                </p>
+                <p>
+                    When I'm not studying or coding, you’ll find me designing RPG games in RPG Maker MZ, building electronic projects, or volunteering to give back to the community that shaped me.
+                </p>
+            </div>
+
+            <aside class="profile-card">
+                <img src="imagesprofile.jpg" alt="Stephen Mivshek" class="profile-img">
+                <div class="profile-info">
+                    <h3>Stephen Mivshek</h3>
+                    <p class="major">Biomedical Engineering, B.S.<br>Minor: Business & Engineering Management</p>
+                    <p><strong>Phone:</strong> 480-881-5631</p>
+                    <p class="contact-line"><strong>Email:</strong> <span class="click-to-copy" data-copy="Stephen.mivshek@gmail.com">Stephen.mivshek@gmail.com <span class="copy-hint">click to copy</span></span></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/Smivshek" target="_blank">github.com/Smivshek</a></p>
+                </div>
+            </aside>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Email: Stephen.mivshek@gmail.com</p>
+        <p>Phone: 480-881-5631</p>
+        <p>&copy; 2025 Stephen Mivshek. All rights reserved.</p>
+    </footer>
+
+        <script>
+            document.querySelectorAll('.click-to-copy').forEach(item => {
+                item.addEventListener('click', () => {
+                    navigator.clipboard.writeText(item.dataset.copy);
+                    const hint = item.querySelector('.copy-hint');
+                    const original = hint.textContent;
+                    hint.textContent = 'copied!';
+                    hint.style.color = '#27ae60';
+                    setTimeout(() => {
+                        hint.textContent = original;
+                        hint.style.color = '';
+                    }, 1500);
+                });
+            });
+        </script>
+
 </body>
 </html>
