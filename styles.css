@@ -207,10 +207,6 @@ tr:hover {
     top: 0;
 }
 
-/* -------------------------------------------------
-   RESUME PAGE STYLES
-   ------------------------------------------------- */
-
 .resume-container {
     max-width: 900px;
     margin: 2rem auto;
@@ -313,7 +309,6 @@ tr:hover {
     line-height: 1.6;
 }
 
-/* Contact Form */
 .contact-section form {
     background: white;
     padding: 2rem;
@@ -354,7 +349,6 @@ tr:hover {
     font-weight: 600;
 }
 
-/* Print-friendly Resume */
 @media print {
     .header, .navbar, .footer, .contact-section, .document-controls {
         display: none !important;
@@ -369,17 +363,12 @@ tr:hover {
     }
 }
 
-/* ==========================================
-   HOME PAGE STYLES
-   ========================================== */
-
 .home-container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-/* Full-width Video */
 .video-section {
     width: 100%;
     margin: 2rem 0;
@@ -395,7 +384,6 @@ tr:hover {
     display: block;
 }
 
-/* About + Profile Layout */
 .about-section {
     display: flex;
     gap: 2.5rem;
@@ -427,7 +415,6 @@ tr:hover {
     font-size: 1.05rem;
 }
 
-/* Profile Card */
 .profile-card {
     flex: 1;
     min-width: 280px;
@@ -474,7 +461,6 @@ tr:hover {
     text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .about-section {
         flex-direction: column;
